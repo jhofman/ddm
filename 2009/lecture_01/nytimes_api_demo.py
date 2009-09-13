@@ -4,6 +4,8 @@
 #
 # description: demonstrates basic interaction with the nytimes
 # newswire api to pull recent content posted to nytimes.com.
+# see also http://prototype.nytimes.com/gst/apitool/index.html
+# to play with this and other nytimes apis.
 #
 # usage: ./nytimes_api_demo.py API_KEY
 #
@@ -13,10 +15,10 @@
 # author: jake hofman (gmail: jhofman)
 #
 
-
-import sys
-from urllib2 import urlopen
-import simplejson
+# import modules
+import sys  # gives access to command line arguments in sys.argv
+from urllib2 import urlopen  # for accessing urls
+import simplejson  # for parsing json return by nytimes api
 
 RECENT_URL='http://api.nytimes.com/svc/news/v2/all/recent.json?api-key='
 
@@ -57,4 +59,3 @@ if __name__=='__main__':
         print "usage: nytimes_api_demo.py API_KEY"
         print
         print "newswire api key required, available at at http://developer.nytimes.com/apps/register"
-
