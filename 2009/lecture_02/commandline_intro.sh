@@ -1,5 +1,10 @@
 #!/bin/bash
 #
+# DISCLAIMER: if you're new to the command line, please do not use/run
+# these commands in directories with important content, as you may
+# overwrite existing files, etc. a good "scratch space" for exploring
+# is the /tmp directory or similar (type "cd /tmp").
+# 
 # file: commandline_intro.sh
 #
 # description: summary of basic command line / shell usage
@@ -83,3 +88,8 @@ grep pattern file | wc -l # print number of lines matchine pattern in file
 # more on grep:
 #   http://www.panix.com/~elflord/unix/grep.html
 #   http://code.google.com/edu/tools101/linux/grep.html
+
+# some additional references for shell commands and basic navigation:
+#   quick reference for frequently used commands: http://www.pixelbeat.org/cmdline.html
+#   example command usage: http://freeengineer.org/learnUNIXin10minutes.html
+#   index + description of some bash commands: http://ss64.com/bash/index.html
