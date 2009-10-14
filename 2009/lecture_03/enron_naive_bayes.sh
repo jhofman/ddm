@@ -26,20 +26,24 @@ if [ $# -eq 1 ]
     then
     word=$1
 else
-    echo "usage: enron1.sh word"
+    echo "usage: enron_naive_bayes.sh <word>"
+    echo
+    echo "e.g. ./enron_naive_bayes.sh money"
     exit
 fi
 
 # if the file doesn't exist, download the .tar.gz
 if ! [ -e enron1.tar.gz ]
     then
+    echo "retrieving data ... "
     wget 'http://www.aueb.gr/users/ion/data/enron-spam/preprocessed/enron1.tar.gz'
 fi
 
 # if the directory doesn't exist, uncompress the .tar.gz
 if ! [ -d enron1 ]
     then
-    tar zxvf enron1.tar.gz
+    echo "uncompressing data ... "
+    tar zxf enron1.tar.gz
 fi
 
 # change into enron1
