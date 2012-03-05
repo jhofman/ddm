@@ -1,0 +1,6 @@
+see http://json.parser.online.fr/ for a convenient online JSON parser.
+
+the following hack is also useful for pretty-printing json:
+
+    curl <url> | python -m json.tool
+
