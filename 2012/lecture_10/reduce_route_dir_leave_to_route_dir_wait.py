@@ -24,7 +24,7 @@ def main():
         for row in rows:
             depts.append(row[-1])
         for hour, wait in parse(sorted(map(int,depts))):
-            print key, hour, wait
+            print " ".join(key), hour, wait
 
 
 if __name__ == "__main__":
